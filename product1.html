@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartWatch Pro X - Premium Smartwatch</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .product-detail {
+            padding: 5rem 0;
+        }
+        
+        .product-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+        
+        .product-gallery {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+        }
+        
+        .product-gallery img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        
+        .product-gallery img:hover {
+            transform: scale(1.05);
+        }
+        
+        .product-info h1 {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+        
+        .product-price {
+            font-size: 2rem;
+            color: var(--secondary-color);
+            margin: 1rem 0;
+        }
+        
+        .product-features {
+            margin: 2rem 0;
+        }
+        
+        .product-features li {
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .product-features i {
+            color: var(--secondary-color);
+        }
+        
+        .add-to-cart {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background-color: var(--secondary-color);
+            color: var(--white);
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+        
+        .add-to-cart:hover {
+            background-color: var(--primary-color);
+        }
+        
+        @media (max-width: 768px) {
+            .product-container {
+                grid-template-columns: 1fr;
+            }
+            
+            .product-gallery {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <h1>SmartWatch Pro</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#products">Products</a></li>
+                <li><a href="index.html#features">Features</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Product Detail Section -->
+    <section class="product-detail">
+        <div class="container">
+            <div class="product-container">
+                <div class="product-gallery">
+                    <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500&h=500&fit=crop" alt="SmartWatch Pro X Front View">
+                    <img src="https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=500&h=500&fit=crop" alt="SmartWatch Pro X Side View">
+                    <img src="https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=500&h=500&fit=crop" alt="SmartWatch Pro X Back View">
+                    <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500&h=500&fit=crop" alt="SmartWatch Pro X Features">
+                </div>
+                <div class="product-info">
+                    <h1>SmartWatch Pro X</h1>
+                    <p class="product-description">
+                        The SmartWatch Pro X is our flagship smartwatch, designed for those who demand the best in technology and style. With advanced health tracking, premium materials, and a stunning display, it's the perfect companion for your active lifestyle.
+                    </p>
+                    <div class="product-price">$299.99</div>
+                    <ul class="product-features">
+                        <li><i class="fas fa-check"></i> Advanced heart rate monitoring</li>
+                        <li><i class="fas fa-check"></i> Blood oxygen level tracking</li>
+                        <li><i class="fas fa-check"></i> Sleep analysis and tracking</li>
+                        <li><i class="fas fa-check"></i> Water resistant up to 50m</li>
+                        <li><i class="fas fa-check"></i> 7-day battery life</li>
+                        <li><i class="fas fa-check"></i> Always-on display</li>
+                        <li><i class="fas fa-check"></i> Built-in GPS</li>
+                        <li><i class="fas fa-check"></i> Music storage and playback</li>
+                    </ul>
+                    <a href="#" class="add-to-cart">Add to Cart</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>SmartWatch Pro</h3>
+                    <p>Premium smartwatches for your active lifestyle</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#products">Products</a></li>
+                        <li><a href="index.html#features">Features</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 SmartWatch Pro. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <div class="creator-attribution">Created by Nitin Singh</div>
+</body>
+</html> 
